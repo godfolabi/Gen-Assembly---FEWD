@@ -1,0 +1,47 @@
+/* styling for my outer div
+- the flex container */
+div.container {
+    background-color: aquamarine;
+    display: flex;
+    border: 3px solid black;
+    width: 600px;
+    height: 400px;
+    /* flex container properties */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styling for my inner divs
+- children of the flex container */
+div.container > div.item {
+    background-color: yellow;
+    margin: 3px;
+    border: 3px solid black;
+    width: 60px;
+    text-align: center;
+}
+
+div.container > div#small {
+    width: 60px;
+    height: 40px;
+    /* flex item properties */
+    order: 1;
+    flex-grow:.5;
+}
+
+div.container > div#medium {
+    width: 80px;
+    height: 75px;
+    /* flex item properties */
+    order: 3;
+    flex-grow: 1;
+}
+
+div.container > div#large {
+    width: 100px;
+    height: 150px;
+    /* flex item properties */
+    order: 2;
+    flex-grow:2;
+}

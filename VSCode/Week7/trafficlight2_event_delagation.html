@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="trafficlight2_event_delegation.css"/>
+  <title>Traffic Light</title>
+</head>
+<div id="controlPanel">
+    <h1 id="stopButton" data-target="#stopLight" class="button">Stop</h1>
+    <h1 id="slowButton" data-target="#slowLight" class="button">Slow</h1>
+    <h1 id="goButton" data-target="#goLight" class="button">Go</h1>
+  </div>
+  <div id="traffic-light">
+    <div id="stopLight" data-color="red" class="bulb"></div>
+    <div id="slowLight" data-color="yellow" class="bulb"></div>
+    <div id="goLight" data-color="green" class="bulb"></div>
+  </div>
+  <script src="trafficlight2_event_delegation.js"></script>
+</body>
+
+</html>

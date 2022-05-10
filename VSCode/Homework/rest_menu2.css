@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.ulmenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.ulmenu>.li {
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.banner>img {
+    background-color: orangered;
+    max-width: 100%;
+}
+
+.about {
+    background-color: orangered;
+    display: flex;
+    height: 460px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.about>.aboutus p {
+    padding: 15px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-align: justify;
+    width: 40vw;
+}
+
+.about> .chef {
+    width: 44.5vw;
+    max-width: 650px;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+.menuitems {
+    border-top: 3px solid orangered;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.itemprice {
+    color: rgb(255, 30, 0);
+    font-weight: bold;
+}
+
+.menuimg {
+    width: 30vw;
+}
+
+.footer {
+    border-top: 3px solid orangered;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Heads have titles, just put in the there yo -->
+    <title>Layout Experiment</title>
+  </head>
+  <body>
+
+    <!-- You'll usually lead your page off with a top level (H1) heading-->
+    <h1>It's always good to have links around:</h1>
+    <ul>
+      <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+      <!-- <pre>?!?! Check me out in more depth: https://www.sitepoint.com/everything-need-know-html-pre-element/ -->
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-position">MDN: <pre>background-position</pre></a></li>
+      <li><a href="https://www.whitehouse.gov/">White House</a></li>
+      <li><a href="http://stackoverflow.com/">Stack Overflow</a></li>
+    </ul>
+
+    <!-- What does the target property do on an a href? -->
+    <div>
+      <h2>Maybe you would like to read some interesting stuff today?</h2>
+      <ul>
+        <li><a href="https://25iq.com/2016/06/18/a-dozen-things-ive-learned-from-elon-musk-about-business-and-investing/" target="_blank">Elon Musk on Investing</a></li>
+        <li><a href="http://www.theatlantic.com/technology/archive/2016/06/antikythera-mechanism-whoa/487832/">Antikythera Machine from Ancient Greece</a></li>
+      </ul>
+    </div>
+
+    <!-- Why am I using a class here? What good would this do me? -->
+    <div class="image-container">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/rally.jpg" alt="Political Rally" />
+    </div>
+  
+    <!-- You don't have to learn HTML forms yet, but at least check one out for now... -->
+    <form>
+      <fieldset>
+        <legend>How many days are in a week?</legend>
+        <div class="radio-container">
+          <!-- Check out how id attribute on the input matches up to the for attribute of the label -->
+          <div class="radio">
+            <input type="radio" id="radio1" name="radio-group" checked>
+            <label for="radio1"><span>5</span></label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="radio2" name="radio-group">
+            <label for="radio2"><span>8</span></label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="radio3" name="radio-group">
+            <label for="radio3"><span>7</span></label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="radio4" name="radio-group">
+            <label for="radio4"><span>3</span></label>
+          </div>
+        </div>
+        <!-- What happens when you click the button? Why?!? Explore... -->
+        <input type="submit" value="Submit this form">
+      </fieldset>
+    </form>    
+  </body>
+</html>

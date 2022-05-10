@@ -1,0 +1,49 @@
+/* Mobile Styling */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 20px;
+    /* max-width: 545px; */
+}
+
+section .column {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    /* max-width: 23vw; */
+}
+
+img {
+    height: 120px;
+    padding: 20px;
+    width: 120px;
+}
+
+.column .column-copy {
+    padding: 20px;
+}
+
+/* Tablet Styling */
+@media (min-width: 545px) and (max-width: 768px) {
+    section .column {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Laptop Styling */
+@media (min-width: 768px) {
+    section  {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 768px) {
+    section .column {
+        flex-direction: column;
+        min-height: 390px;
+    }
+}

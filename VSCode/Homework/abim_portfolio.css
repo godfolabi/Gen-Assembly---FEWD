@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    }
+
+.main {
+    background: #171717;
+    z-index: 0;
+}
+
+.navbar__container {
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+    height: 100vh;
+    width: 10em;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+
+.nav__logo {
+    background-color: #000000;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.nav__logo svg {
+    height: 15vh;
+}
+
+.nav__logo h1 {
+    font-size: 4em;
+    color: #19F7FF;
+}
+
+.nav__logo h3 {
+    font-size: 2em;
+}
+
+.nav__logo p {
+    font-size: .9em;
+}
+
+.nav__menu {
+    padding: 5em 0em;
+    width: 100%;
+}
+
+.nav__menu > ul {
+    border-top: 4px solid #6b6b6b;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+ul > .nav__item {
+    border-bottom: 4px solid #6b6b6b;
+    padding: 30px 0px;
+    text-transform: uppercase;
+    
+}
+
+.nav__item > a {
+    color: #6b6b6b;
+    font-size: 1em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__item > a:hover {
+    color: #19F7FF;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .75em;
+    font-size: 1.4em;
+}
+
+.social__logo .fa-linkedin {
+    color: #696969;
+    transition: all 0.3s ease-in-out;
+}
+
+.social__logo .fa-linkedin:hover {
+    color: #ff2b48;
+    transition: all 0.3s ease-in-out;
+}
+
+.social__logo .fa-behance {
+    color: #696969;
+    transition: all 0.3s ease-in-out;
+}
+
+.social__logo .fa-behance:hover {
+    color: #ff2b48;
+    transition: all 0.3s ease-in-out;
+}
+
+.social__logo .fa-github {
+    color: #696969;
+    transition: all 0.3s ease-in-out;
+}
+
+.social__logo .fa-github:hover {
+    color: #ff2b48;
+    transition: all 0.3s ease-in-out;
+}
+
+/* .mobile__menu {
+    display: none;
+} */
+
+
+@media (max-width: 768px) {
+    .navbar__container {
+        position: fixed;
+        right:-100%;
+        top: 70px;
+        gap: 0;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar__container.active {
+        right: 0;
+        top: 0;
+        transition: all 0.3s ease;
+    }
+
+    .nav__logo svg {
+        height: 10vh;
+    }
+
+    .mobile__menu {
+        position: absolute;
+        right: 3%;
+        top: 3%;
+        transform: translate(5%, 20%);
+        z-index: 2;
+    }
+    
+    .mobile__menu .bar {
+        width: 30px;
+        height: 4px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #ffffff;
+    }
+
+    .mobile__menu .bar {
+        display: block;
+        cursor: pointer;        
+    }
+    
+    .mobile__menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile__menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .mobile__menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    
+}

@@ -1,0 +1,128 @@
+body {
+    box-sizing: border-box; /* remember what this does? */
+    margin: 25px;
+  }
+  
+  /* HEADER */
+  /* Whaaa? Repeat??!? */
+  /* Explore...https://alligator.io/css/css-grid-layout-repeat-notation/ */
+  .responsive-container {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  
+  @media (min-width: 500px) {
+    .responsive-container {
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+
+  .responsive-container li {
+    background-color: lightblue;
+    height: 80px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* MAIN SECTION */
+  .main-container {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr;
+  }
+  
+  @media (min-width: 500px) { 
+    .main-container {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  .content-container {
+    background-color: #cbf2a8;
+  }
+  
+  /* How is a floated image natively responsive? How is it not? */
+  .floated-image {
+    float: block;
+    display: auto;
+    margin: 15px 0px;
+    width: 300px;
+  }
+
+  @media (min-width: 700px) { 
+    .floated-image {
+      display: inline;
+      float: right;
+      margin: 0 0 10px 10px;
+      width: 300px;
+    }
+  }
+  
+  aside {
+    background-color: lightgray;
+  }
+  
+  /* a responsive image - think about why this works... */
+  aside img {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /* SECONDARY SECTION */
+  .secondary-container {
+    display: flex;
+    /* the change in wrap was added */
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;;
+  }
+
+  @media (min-width: 500px) and (max-width: 768px) {
+    .secondary-container {
+        max-width: 100%;
+      }
+  }
+
+  @media (min-width: 768px) {
+      .secondary-container {
+          flex-wrap: nowrap;
+          width: 768px;
+      }
+  } 
+  
+  /* What are the pros / cons of using fixed widths for a responsive design? */
+  .secondary-container div {
+    align-items: center;
+    background-color: rebeccapurple;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    width: 150px;
+    padding: 25px;
+  }
+  
+  /* FOOTER */
+  .footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 500px) {
+    .footer-container {
+      flex-direction: row;
+    }
+  }
+  
+  /* What does percentage width flexbox do in responsive design vs. fixed width above? */
+  .footer-container section {
+    background-color: pink;
+    height: 60px;
+    margin: 25px;
+    width: calc(33.3% - 25px); /* calc is a good way to mix units, why am I doing this? */
+  }

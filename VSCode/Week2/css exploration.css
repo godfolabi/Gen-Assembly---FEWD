@@ -1,0 +1,40 @@
+/* Just one way you could style things */
+
+.aa {
+    background-color: #c0c0c0;
+    padding: 10px;
+  }
+  
+  .hp-news-category {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-weight: bolder;
+    line-height: 1;
+    color: rgb(11, 72, 151);
+  }
+  .hp-news-title {
+    font-size: 48px;
+    line-height: 1;
+    margin: 5px 0;
+    font-weight: bold;
+    color: rgb(8, 6, 6);
+  }
+  
+  .hp-news-author, .hp-news-date  {
+    color: rgb(8, 6, 6);
+    text-transform: uppercase;
+    font-family: sans-serif;
+    line-height: .1;
+  }
+  
+  img {
+    width: 60%;
+    border: 3px solid black;
+  }
+
+  ul {list-style-type: square;
+
+  }
+  
