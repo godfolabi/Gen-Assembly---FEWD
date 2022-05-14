@@ -1,6 +1,0 @@
-GA FEWD resources:
-https://stackoverflow.com/
-https://css-tricks.com/
-https://developer.mozilla.org/en-US/
-https://caniuse.com/
-https://codepen.io/
